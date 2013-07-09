@@ -337,4 +337,7 @@ $server->addGrantType(new OAuth2\GrantType\RefreshToken($refreshStorage));
 $server->handleTokenRequest(OAuth2\Request::createFromGlobals())->send();
 ```
 
-You've done it!!! Well, almost all of it.
+You've done it!!! Well, almost all of it.  The only thing left is to add your
+user!  Well, see the symfony documentation for how to integrate with
+`sfGuardUser`.
+
